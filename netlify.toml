@@ -1,5 +1,5 @@
 [build]
-command = "mvn clean package"
+command = "./mvnw clean package"
 publish = "/opt/build/repo/target/classes/static"
 
 [[redirects]]
