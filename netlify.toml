@@ -1,8 +1,0 @@
-[build]
-command = "./mvnw clean package"
-publish = "/opt/build/repo/target/classes/static"
-
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
