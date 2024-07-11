@@ -1,0 +1,72 @@
+-------------------------------------------------------------------------------
+Test set: com.example.conexatest.conexatest.FilmServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.544 s <<< FAILURE! - in com.example.conexatest.conexatest.FilmServiceTest
+testGetFilms  Time elapsed: 0.529 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Failed to release mocks
+
+This should not happen unless you are using a third-party mock maker
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: org.mockito.exceptions.misusing.InjectMocksException: 
+
+Cannot instantiate @InjectMocks field named 'filmService' of type 'class com.example.conexatest.conexatest.service.FilmService'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+
+testGetFilmsWithNameOrId  Time elapsed: 0 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Failed to release mocks
+
+This should not happen unless you are using a third-party mock maker
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: org.mockito.exceptions.misusing.InjectMocksException: 
+
+Cannot instantiate @InjectMocks field named 'filmService' of type 'class com.example.conexatest.conexatest.service.FilmService'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+
+testGetFilmsById  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Failed to release mocks
+
+This should not happen unless you are using a third-party mock maker
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: org.mockito.exceptions.misusing.InjectMocksException: 
+
+Cannot instantiate @InjectMocks field named 'filmService' of type 'class com.example.conexatest.conexatest.service.FilmService'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+
+testGetFilmsByIdNotFound  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Failed to release mocks
+
+This should not happen unless you are using a third-party mock maker
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: org.mockito.exceptions.misusing.InjectMocksException: 
+
+Cannot instantiate @InjectMocks field named 'filmService' of type 'class com.example.conexatest.conexatest.service.FilmService'.
+You haven't provided the instance at field declaration so I tried to construct the instance.
+However the constructor or the initialization block threw an exception : Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.reactive.function.client.WebClient$Builder.build()" because the return value of "org.springframework.web.reactive.function.client.WebClient$Builder.baseUrl(String)" is null
+	at com.example.conexatest.conexatest.FilmServiceTest.setUp(FilmServiceTest.java:45)
+
