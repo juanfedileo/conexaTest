@@ -1,0 +1,8 @@
+[build]
+publish = "target/classes/static"
+command = "./mvnw clean package"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
